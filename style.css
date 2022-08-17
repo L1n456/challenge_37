@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+header{
+    padding: 3%;
+    color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "raleway", sans-serif;
+    font-weight: 500;
+}
+
+header img{
+    width: 10%;
+}
+
+header .menu {
+    width: 20%;
+    display: flex;
+    gap: 15%;
+}
+
+main p{
+    font-family: "open sans",sans-serif;
+}
+
+main h1,h2{
+    font-family: "raleway";
+}
+
+main .top{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+main .top .left{
+    width: 50%;
+}
+
+main .top .left p{
+    margin: 3% 0;
+}
+
+main .top .left input{
+    padding: 2% 20% 2% 2%;
+}
+
+main .top .left button{
+    background-color: var(--Bright-Blue);
+    border-radius: 5px;
+    padding: 2% 10%;
+    border: 2px solid var(--Bright-Blue);
+    color: white;
+    font-weight: 600;
+}
+
+main .top .left button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+::placeholder{
+    opacity: 0.5;
+}
+
+main .top .left .error-1{
+    color: red;
+    margin-top: 1%;
+    opacity: 0;
+}
+
+main .top .right{
+    width: 50%;
+}
+
+main .middle{
+    margin-top: 5%;
+    background-image: url("images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding-top: 10%;
+}
+
+.middle .container{
+    background-color: var(--Light-Grayish-Blue);
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+main .middle .left{
+    width: 50%;
+}
+
+main .middle .left .p{
+    margin: 3% 0;
+}
+
+main .middle .link{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+main .middle .link a{
+    color: var(--Moderate-Cyan);
+    text-decoration: none;
+    font-family: "open sans";
+}
+
+main .link::after{
+    content: "";
+    width: 14%;
+    height: 1.5px;
+    background-color: var(--Moderate-Cyan);
+    position: absolute;
+    margin-top: 2.5%;
+}
+
+main .middle .link a:hover{
+    opacity: 0.8;
+}
+
+main .link:hover::after{
+    opacity: 0.8;
+}
+
+main .link:hover .arrow{
+    opacity: 0.8;
+}
+
+main .middle .right{
+    width: 50%;
+}
+
+main .middle .review{
+    margin-top: 5%;
+    width: 60%;
+    box-shadow: 0px 0px 5px 5px rgb(227, 227, 227);
+    padding: 2% 5%;
+    border-radius: 10px;
+}
+
+main .review p{
+    font-size: 13px;
+}
+
+main .review .profile{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main .profile img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+main .profile p{
+    font-size: 15px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-weight: 600;
+    margin: 3% 0 3% -10%;
+}
+
+main .profile small{
+    margin-top: 15%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: -10%;
+    font-family: "open sans";
+    opacity: 0.8;
+}
+
+main .bottom{
+    background-color: var(--Desaturated-Blue);
+    padding: 5%;
+    color: white;
+    display: flex;
+    gap: 10%;
+}
+
+main .bottom .left{
+    width: 50%;
+}
+
+main .bottom .left p{
+    margin: 3% 0;
+}
+
+main .bottom .right{
+    width: 50%;
+} 
+
+main .bottom .right input{
+    padding: 2% 40% 2% 2%;
+}
+
+main .bottom .right button{
+    background-color: var(--Bright-Blue);
+    border-radius: 5px;
+    padding: 2% 15%;
+    border: 2px solid var(--Bright-Blue);
+    color: white;
+    font-weight: 600;
+}
+
+main .bottom .right button:hover{
+    cursor: pointer;
+    background-color: rgb(66, 167, 230);
+    border: 2px solid rgb(66, 167, 230);
+}
+
+main .bottom .right .error-2{
+    font-size: 13px;
+    margin: 1% 0;
+    opacity: 0;
+}
+
+footer{
+    background-color: var(--Very-Dark-Blue);
+    padding: 5%;
+    color: white;
+}
+
+footer p{
+    opacity: 0.8;
+}
+
+footer .logo path{
+    fill: white;
+}
+
+footer .logo{
+    display: block;
+    margin-bottom: 5%;
+}
+
+footer .btm{
+    display: flex;
+    align-items: flex-start;
+    gap: 10%;
+}
+
+footer .info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .info .nbr, footer .info .mail{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+footer .list{
+    width: 30%;
+    display: flex;
+    gap: 30%;
+}
+
+footer .list li{
+    list-style: none;
+    font-family: "open sans";
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+footer .list li:hover{ 
+    color: var(--Bright-Blue);
+    text-decoration: underline;
+    opacity: 1;
+    cursor: pointer;
+}
+
+footer .logos{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 8%;
+    gap: 5%;
+}
+
+footer .logos svg{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.fb{
+    transform: scale(0.8);
+}
+
+footer .logos svg path{
+    fill: white;
+}
+
+footer .logos svg:hover path{
+    cursor: pointer;
+    fill: var(--Bright-Blue);
+}
+
+footer .logos svg:hover{
+    cursor: pointer;
+    border: 1px solid var(--Bright-Blue);
+}
+
+@media screen and (max-width: 375px) {
+    header{
+        padding: 5%;
+        justify-content: right;
+        gap: 20%;
+    }
+    
+    header img{
+        width: 20%;
+    }
+    
+    header .menu {
+        width: 80%;
+        font-size: 14px;
+        justify-content: flex-end;
+    }
+    
+    main .top{
+        padding: 3%;
+        flex-direction: column-reverse;
+    }
+    
+    main .top .left{
+        width: 100%;
+    }
+
+    main .top .left h1{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    
+    main .top .left p{
+        margin: 3% 0;
+        text-align: center;
+    }
+    
+    main .top .left input{
+        width: 100%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    
+    main .top .left button{
+        width: 100%;
+        margin-left: 5%;
+    }
+    
+    main .top .left .error-1{
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    main .top .right{
+        width: 100%;
+    }
+    
+    main .middle{
+        background-image: url("images/bg-curve-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+    }
+    
+    .middle .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    main .middle .left{
+        width: 100%;
+    }
+
+    main .middle h1{
+        text-align: center;
+        margin-top: 5%;
+        font-size: 20px;
+    }
+
+    main .link{
+        text-align: center;
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+    
+    main .link::after{
+        width: 45%;
+        margin-top: 5%;
+    }
+    
+    main .middle .right{
+        width: 80%;
+    }
+    
+    main .middle .review{
+        width: 90%;
+        margin: 5% auto;
+    }
+    
+    main .bottom{
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+    
+    main .bottom .left{
+        width: 100%;
+    }
+    
+    main .bottom .left p{
+        margin: 5% 0;
+    }
+    
+    main .bottom .right{
+        width: 100%;
+    } 
+    
+    main .bottom .right input{
+        padding: 2% 40% 2% 2%;
+    }
+    
+    main .bottom .right button{
+        width: 90%;
+    }
+    
+    footer{
+        padding: 10%;
+    }
+    
+    footer .logo{
+        transform: scale(0.8);
+        margin-left: -5%;
+    }
+    
+    footer .btm{
+        margin-top: 10%;
+        flex-direction: column;
+    }
+    
+    footer .info{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    
+    footer .list{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer ul{
+        margin-bottom: 10%;
+    }
+    
+    footer .logos{
+        margin: 0% auto;
+        width: 30%;    
+    }
+}
